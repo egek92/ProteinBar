@@ -29,9 +29,9 @@ import java.lang.IllegalStateException
  * Created by ege on 03/11/2017.
  */
 
-class Protein private constructor(private val builder: Builder) {
+class Protein constructor(private val builder: Builder) {
 
-  enum class Type private constructor(@param:ColorInt val color: Int?, @param:DrawableRes private val iconResId: Int?,
+  enum class Type constructor(@param:ColorInt val color: Int?, @param:DrawableRes private val iconResId: Int?,
       @param:ColorInt val standardTextColor: Int?) {
     DEFAULT(null, null, null), SUCCESS(Color.parseColor("#4CAF50"), R.drawable.ic_check_black_24dp,
         Color.WHITE),
@@ -168,41 +168,41 @@ class Protein private constructor(private val builder: Builder) {
       return this
     }
 
-    fun setText(@StringRes resId: Int): Builder {
+    fun text(@StringRes resId: Int): Builder {
       this.textResId = resId
       return this
     }
 
-    fun setText(text: CharSequence): Builder {
+    fun text(text: CharSequence): Builder {
       this.textResId = 0
       this.text = text
       return this
     }
 
-    fun setTextColor(@ColorInt color: Int): Builder {
+    fun textColor(@ColorInt color: Int): Builder {
       this.textColor = color
       return this
     }
 
-    fun setTextColor(colorStateList: ColorStateList): Builder {
+    fun textColor(colorStateList: ColorStateList): Builder {
       this.textColor = null
       this.textColors = colorStateList
       return this
     }
 
-    fun setTextSize(textSize: Float): Builder {
+    fun textSize(textSize: Float): Builder {
       this.textSizeUnit = null
       this.textSize = textSize
       return this
     }
 
-    fun setTextSize(unit: Int, textSize: Float): Builder {
+    fun textSize(unit: Int, textSize: Float): Builder {
       this.textSizeUnit = unit
       this.textSize = textSize
       return this
     }
 
-    fun setTextTypefaceStyle(style: Int): Builder {
+    fun textStyle(style: Int): Builder {
       this.textTypefaceStyle = style
       return this
     }
@@ -212,41 +212,41 @@ class Protein private constructor(private val builder: Builder) {
       return this
     }
 
-    fun setActionTextColor(colorStateList: ColorStateList): Builder {
+    fun actionTextColor(colorStateList: ColorStateList): Builder {
       this.actionTextColor = null
       this.actionTextColors = colorStateList
       return this
     }
 
-    fun setActionTextColor(@ColorInt color: Int): Builder {
+    fun actionTextColor(@ColorInt color: Int): Builder {
       this.actionTextColor = color
       return this
     }
 
-    fun setActionText(@StringRes resId: Int): Builder {
+    fun actionText(@StringRes resId: Int): Builder {
       this.actionTextResId = resId
       return this
     }
 
-    fun setActionText(text: CharSequence): Builder {
+    fun actionText(text: CharSequence): Builder {
       this.textResId = 0
       this.actionText = text
       return this
     }
 
-    fun setActionTextSize(textSize: Float): Builder {
+    fun actionTextSize(textSize: Float): Builder {
       this.actionTextSizeUnit = null
       this.actionTextSize = textSize
       return this
     }
 
-    fun setActionTextSize(unit: Int, textSize: Float): Builder {
+    fun actionTextSize(unit: Int, textSize: Float): Builder {
       this.actionTextSizeUnit = unit
       this.actionTextSize = textSize
       return this
     }
 
-    fun setActionTextTypefaceStyle(style: Int): Builder {
+    fun actionTextStyle(style: Int): Builder {
       this.actionTextTypefaceStyle = style
       return this
     }
@@ -256,27 +256,27 @@ class Protein private constructor(private val builder: Builder) {
       return this
     }
 
-    fun setMaxLines(maxLines: Int): Builder {
+    fun maxLines(maxLines: Int): Builder {
       this.maxLines = maxLines
       return this
     }
 
-    fun setDuration(@Duration duration: Int): Builder {
+    fun duration(@Duration duration: Int): Builder {
       this.duration = duration
       return this
     }
 
-    fun setIcon(@DrawableRes resId: Int): Builder {
+    fun icon(@DrawableRes resId: Int): Builder {
       this.iconResId = resId
       return this
     }
 
-    fun setIcon(drawable: Drawable): Builder {
+    fun icon(drawable: Drawable): Builder {
       this.icon = drawable
       return this
     }
 
-    fun setBackgroundColor(@ColorInt color: Int): Builder {
+    fun backgroundColor(@ColorInt color: Int): Builder {
       this.backgroundColor = color
       return this
     }
@@ -340,8 +340,8 @@ internal object Bar {
   }
 
   fun makeTransparentDrawable(context: Context, width: Int, height: Int): Drawable {
-    val conf = Bitmap.Config.ARGB_8888
-    val bmp = Bitmap.createBitmap(width, height, conf)
-    return BitmapDrawable(context.resources, bmp)
+    val config = Bitmap.Config.ARGB_8888
+    val bitmap = Bitmap.createBitmap(width, height, config)
+    return BitmapDrawable(context.resources, bitmap)
   }
 }
