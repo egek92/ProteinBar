@@ -22,7 +22,7 @@ in your app level `build.gradle`
 ```gradle
 dependencies {
     ...
-    'com.github.egek92:ProteinBar:1.4'
+    implementation 'com.github.egek92:ProteinBar:1.4'
 }
 ```
 
@@ -43,18 +43,18 @@ Protein.builder()
        
 ## Complete List of Methods
 
-`text("example")`  : set text 
-`textSize(12)` : set text size 
-`textStyle(textStyle.BOLD)` : define text style 
-`textColor(Color.parseColor("#FFFFFF"))` : set text color
+* `text("example")`  : set text 
+* `textSize(12)` : set text size 
+* `textStyle(textStyle.BOLD)` : define text style 
+* `textColor(Color.parseColor("#FFFFFF"))` : set text color
 
-`duration(Protein.LENGTH_SHORT)`  : ProteinBar display duration
+* `duration(Protein.LENGTH_SHORT)`  : ProteinBar display duration
 
-`icon(R.drawable.icon)` : set icon
+* `icon(R.drawable.icon)` : set icon
 
-`backgroundcolor(Color.parseColor("#FFFFFF"))` : set background color
+* `backgroundcolor(Color.parseColor("#FFFFFF"))` : set background color
 
-`centerText()` : allign text to center
+* `centerText()` : allign text to center
 
 alternatively you can use pre-made action ProteinBars
 
