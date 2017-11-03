@@ -27,18 +27,9 @@ dependencies {
 ```
 
 
-## Usage
-```
-Protein.builder()
-       .setView(rootView) or setActivity(this) //set your root view or activity first
-       .text("example text to show)
-       .textColor(Color.parseColor("#FFFFFF"))
-       .textSize(12)
-       .icon(R.mipmap.ic_launcher)
-       .duration(Protein.LENGTH_SHORT)
-       .build()  //build ProteinBar
-       .show(); //display ProteinBar
-```
+## Usage Example
+
+![alt tag](http://cubeupload.com/im/RORxFT.png)
        
        
 ## Complete List of Methods
