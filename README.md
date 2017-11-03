@@ -29,7 +29,7 @@ dependencies {
 
 ## Usage Example
 
-![alt text](http://cubeupload.com/im/RORxFT.png)
+![alt text](https://user-images.githubusercontent.com/10755037/32389442-a83eb560-c0db-11e7-8095-98f44e87ce7e.png)
        
        
 ## Complete List of Methods
