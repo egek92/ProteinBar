@@ -55,6 +55,13 @@ info()
 warning()
 error()
 ```
+```
+Protein.builder()    
+	.setActivity(this)    
+	.text("Houston we have a problem!")    
+	.error()    
+	.show()
+	
 
 
 
