@@ -58,13 +58,15 @@ error()
 ```
 Protein.builder()    
 	.setActivity(this)    
-	.text("Houston we have a problem!")    
-	.error()    
+	.text("Hippity hoppity get off my property!")   
+	.backgroundColor(Color.parseColor("#00ff00"))    
+	.icon(R.drawable.frog)      
 	.show()
+```
 	
 
 
-
+![Screenshot](https://user-images.githubusercontent.com/10755037/32390428-75b60df6-c0df-11e7-99df-c35994267388.gif)
 
 
        
